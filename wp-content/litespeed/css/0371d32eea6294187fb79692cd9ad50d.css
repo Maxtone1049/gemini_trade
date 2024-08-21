@@ -2747,7 +2747,7 @@ body.rtl .elementor-12 .elementor-element.elementor-element-6faedae {
     color: var(--e-global-color-primary);
     border-color: #00000000;
     border-width: 0;
-    border-radius: 0
+    border-radius: 0;
 }
 
 .elementor-12 .elementor-element.elementor-element-2f04fb7 .elementor-flip-box__back .elementor-flip-box__layer__title {
@@ -2777,14 +2777,14 @@ body.rtl .elementor-12 .elementor-element.elementor-element-6faedae {
 
 .elementor-12 .elementor-element.elementor-element-f3fe4d7 .elementor-flip-box__front {
     background-color: #00000000;
-    background-image: url("../../uploads/images/salesexecutive.jpg");
+    background-image: url("https://www.opixtech.com/wp-content/uploads/2022/09/Research-Scientist.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
 }
 
 .elementor-12 .elementor-element.elementor-element-f3fe4d7 .elementor-flip-box__back {
-    background-image: url("../../uploads/images/salesexecutive.jpg");
+    background-image: url("https://www.opixtech.com/wp-content/uploads/2022/09/Research-Scientist.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover
