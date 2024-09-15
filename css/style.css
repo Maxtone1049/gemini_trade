@@ -919,6 +919,84 @@ footer .footfoot ul a{
 }
 /* Copytrading Styles end */
 
+/* media Style starts here */
+.carousel-wrapper {
+    display: flex;
+    width: 100%;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 13px;
+    background-color: #D9D9D9;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide .img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 13px;
+    }
+
+
+.prev {
+    margin-right: 10px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+.prev, .next {
+    border: none;
+color: black;
+background: transparent;
+padding: 10px;
+font-size: 50px;
+font-family: 'Raleway', sans-serif;
+cursor: pointer;
+z-index: 10;
+}
+
+.prev {
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.next {
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+/* media Style ends here */
 
 /* Responsive Styles */
 @media  screen and (max-width: 768px) {
@@ -1005,6 +1083,10 @@ footer .footfoot ul a{
     }
     .tech svg{
         width: 350px;
+    }
+    .carousel-wrapper{
+        padding-left:60px;
+    padding-right:60px;
     }
   .titlone{
     flex-direction: row;

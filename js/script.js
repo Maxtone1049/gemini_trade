@@ -52,3 +52,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+function scrollSlides(direction) {
+    const carousel = document.querySelector('.carousel');
+    const slideWidth = document.querySelector('.slide').offsetWidth;
+    const scrollAmount = direction * (slideWidth + 20); // 20 is the margin between slides
+    carousel.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}
