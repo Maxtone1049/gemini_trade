@@ -10,16 +10,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <video autoplay muted loop id="background-video">
+        <source src="images/Technology.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <nav class="navbar">
         <div class="logo">
             <a href="."><img src="images/main.png" alt=""></a>
         </div>
         <ul class="nav-links">
-            <li><a href="" >Home</a></li>
+            <li><a href="." >Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropbtn" class="active">Our Services <img src="images/down.png"></a>
+                <a href="#" class="active">Our Services <img src="images/down.png"></a>
                 <ul class="dropdown-content">
-                    <li><a href="academy.html">Swift Academy</a></li>
+                    <li><a class="active" href="academy.html">Swift Academy</a></li>
                     <li><a href="copytrade.html">iTrade</a></li>
                     <li><a href="#">Swift Properties</a></li>
                 </ul>
@@ -30,10 +34,21 @@
                     <li><a href="video.html">Video</a></li>
                 </ul>
                 </li>
+            <ul class="dropdown-content">
+                <li><a href="media.html">PhotoGallery</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+            </li>
             <li><a href="https://app.projecti.trade" target="_blank">Login</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Call Me</a></li>
+            <li class="dropdown">
+                <a href="#">Contact<img src="images/down.png"></a>
+                <ul class="dropdown-content">
+                    <li><a href="./#contact">Call Me</a></li>
+                    
+                </ul>
+            </li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -112,6 +127,7 @@
         <!-- Tab switch buttons -->
     
         
+        <!-- Tab 1 for 9ja Plans -->
         <div id="tab1" class="tab-pane active">
                 <div class="serviceholder">
                 <!-- flpper starts here -->
@@ -183,6 +199,9 @@
                                 </div>
                             </div>
                         </div>
+                        
+                    </div>
+                    <div class="cards-wrapper">
                         <div class="card-container">
                             <div class="card">
                                 <div class="card-front">
@@ -240,6 +259,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="cards-wrapper">
                         <div class="card-container">
                             <div class="card">
                                 <div class="card-front">
@@ -309,60 +330,63 @@
                             </div>
                         </div>
                     </div>
+                 
                  </div>
                  <!-- 9japlans -->
                  <!-- flipper ends here -->
             </div>
+
+            <!-- Tab 2 For Global -->
             <div id="tab2" class="tab-pane">
                 <!-- flpper starts here -->
                 <div class="serviceholder">
                     <!-- Globla Plans -->
                     <div class="cards-wrapper">
-                       
-                    
                         <div class="card-container">
-                            <div class="card">
-                                <div class="card-front">
-                                    <img src="images/Global/Rookie.png" alt="">
-                                    <h2>Rookie</h2>
-                                </div>
-                                <div class="card-back">
-                                    <h2>Benefits</h2>
-                                    <ul>
-                                        <li>Opportunity to Earn 300% Withdrawable</li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="card-front">
-                                    <img src="images/Global/Citizen.png" alt="">
-                                    <h2>Citizen</h2>
-                                </div>
-                                <div class="card-back">
-                                    <h2>Benefits</h2>
-                                    <ul>
-                                        <li>Opportunity to Earn 300% Withdrawable</li>
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-container">
-                            <div class="card">
-                                <div class="card-front">
-                                    <img src="images/Global/Classic.png" alt="">
-                                    <h2>Classic</h2>
-                                </div>
-                                <div class="card-back">
-                                    <h2>Benefits</h2>
-                                    <ul>
-                                        <li>Opportunity to Earn 300% Withdrawable</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                             <div class="card">
+                                 <div class="card-front">
+                                     <img src="images/Global/Rookie.png" alt="">
+                                     <h2>Rookie</h2>
+                                 </div>
+                                 <div class="card-back">
+                                     <h2>Benefits</h2>
+                                     <ul>
+                                         <li>Opportunity to Earn 300% Withdrawable</li>
+                                         </ul>
+                                 </div>
+                             </div>
+                         </div>
+                     
+                         <div class="card-container">
+                             <div class="card">
+                                 <div class="card-front">
+                                     <img src="images/Global/Citizen.png" alt="">
+                                     <h2>Citizen</h2>
+                                 </div>
+                                 <div class="card-back">
+                                     <h2>Benefits</h2>
+                                     <ul>
+                                         <li>Opportunity to Earn 300% Withdrawable</li>
+                                         </ul>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="card-container">
+                             <div class="card">
+                                 <div class="card-front">
+                                     <img src="images/Global/Classic.png" alt="">
+                                     <h2>Classic</h2>
+                                 </div>
+                                 <div class="card-back">
+                                     <h2>Benefits</h2>
+                                     <ul>
+                                         <li>Opportunity to Earn 300% Withdrawable</li>
+                                     </ul>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                    <div class="cards-wrapper">
                         <div class="card-container">
                             <div class="card">
                                 <div class="card-front">
@@ -408,6 +432,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="cards-wrapper">
                         <div class="card-container">
                             <div class="card">
                                 <div class="card-front">
@@ -442,7 +468,7 @@
                             <div class="card">
                                 <div class="card-front">
                                     <img src="images/Global/infinity.png" alt="">
-                                    <h2>Inifity</h2>
+                                    <h2>Infinity</h2>
                                 </div>
                                 <div class="card-back">
                                     <h2>Benefits</h2>

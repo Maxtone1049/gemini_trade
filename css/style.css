@@ -26,15 +26,26 @@
 }
 
 body {
-    background-color: #F9F9F9;
-    font-family: Arial, sans-serif;
+    /* background-color: #F9F9F9; */
+    margin: 0;
+    padding: 0;
+    background: none;
+    }
+    #background-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; 
+        min-height: 100%;
+        z-index: -1; /* Ensure it stays behind all other content */
+        object-fit: cover;
     }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 15px 30px;
     position: fixed;  /* Fixing the navbar at the top */
     width: 100%;
@@ -57,7 +68,7 @@ body {
 }
 
 .nav-links li a {
-    color:#536877;
+    color:#000;
     font-family: 'Satoshi';
     text-decoration: none;
     padding: 15px;
@@ -92,10 +103,9 @@ body {
 .dropdown-content li a {
     padding: 10px;
     display: block;
-    color:#536877;
+    color:black;
     text-align: center;
-    color:#536877;
-}
+    }
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -111,7 +121,7 @@ body {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease;
 }
 .titlone{
@@ -133,6 +143,7 @@ body {
 
 .cont .contone{
     font-family:'Raleway',sans-serif;
+    color: #fff;
     font-weight: 700;
 }
 .cont .conttwo{
@@ -143,10 +154,12 @@ body {
 .cont .minicont{
     font-family:'Raleway',sans-serif;
     font-weight: 700;
+    color: #fff;
     padding-bottom: 17px;
 }
 .cont .holder{
 font-family: 'SatoshiLight';
+color: #fff;
 font-weight: 400;
 font-size: 14px;
 }
@@ -159,13 +172,15 @@ font-size: 14px;
     flex-direction:column;
     align-items:center;
     gap: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-bottom: 10px;
 }
 .tiletwo .hold{
     font-family:'Raleway',sans-serif;
+    color: #fff;
 }
 .tiletwo .pow{
+    color: #fff;
     font-family:'Raleway',sans-serif;
 }
 .tiletwo .pow .rwd{
@@ -257,6 +272,7 @@ font-size: 14px;
     font-family:'Raleway',sans-serif;
     font-weight: 600;
     padding-bottom: 15px;
+    color: #fff;
     font-size:20px;
 }
 .services .ton span{
@@ -357,14 +373,16 @@ font-size: 14px;
     flex-direction:column;
     align-items: center;
     gap: 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .tech .tnote .thead{
     font-family:'Raleway',sans-serif;
     font-size: 24px;
     font-weight: 600;
+    color: #fff;
 }
 .tech .tnote .tedge{
+    color: #fff;
     font-family:'Raleway',sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -393,6 +411,7 @@ font-size: 14px;
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
+    color: #fff;
 }
 
 .career .ctitle{
@@ -401,6 +420,7 @@ font-size: 14px;
     font-size: 20px;
     text-align: center;
     padding-bottom: 10px;
+    color: #fff;
 }
 
 .community{
@@ -420,6 +440,7 @@ font-size: 14px;
 }
 .community .comhead .csubhead{
     font-family:'Raleway',sans-serif;
+    color: #fff;
     font-size: 30px;
     font-weight:600;
     padding-bottom: 10px;
@@ -433,6 +454,7 @@ font-size: 14px;
 
 .community .comhead .cdetail{
     font-family:'Raleway',sans-serif;
+    color: #fff;
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 5px;
@@ -545,7 +567,7 @@ font-size: 14px;
 
 footer {
     color: white;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     font-size: 16px;
@@ -731,7 +753,7 @@ footer .footfoot ul a{
 }
 .cards-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content:center;
     gap: 15px;
 }
@@ -739,8 +761,8 @@ footer .footfoot ul a{
     perspective: 1000px;
 }
 .card {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     position: relative;
     transform-style: preserve-3d;
     transform: rotateY(0deg);
@@ -772,7 +794,7 @@ footer .footfoot ul a{
     font-weight: 600;
 }
 .card-front img{
-    width:120px;
+    width:250px;
 }
 
 .card-back {
@@ -795,6 +817,7 @@ footer .footfoot ul a{
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    background-color: #fff;
     margin-bottom: 30px;
 }
 .tch .tnote .tspan{
@@ -999,6 +1022,7 @@ z-index: 10;
 /* media Style ends here */
 
 /* Responsive Styles */
+
 @media  screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -1018,7 +1042,9 @@ z-index: 10;
     .nav-links li a {
         padding: 20px;
         text-align: center;
+        color:black;
     }
+    
 
     .dropdown-content  {
         position: relative; 
@@ -1037,6 +1063,9 @@ z-index: 10;
 
     .dropdown-content li {
         width: 100%;
+    }
+    .dropdown-content li a{
+        color: #000;
     }
 
     .burger {
@@ -1063,9 +1092,24 @@ z-index: 10;
     .burger.toggle .line3 {
         transform: rotate(45deg) translate(-5px, -5px);
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-links li a {
+        padding: 20px;
+        text-align: center;
+        color:black;
+    }
    
 }
+
 @media only screen and (min-width: 920px) {
+    .dropdown-content li a{
+        color: #000;
+    }
+    .nav-links li a {
+        color:#fff;
+    }
     .titlone img{
         width: 250px;
       }
@@ -1205,6 +1249,7 @@ footer .footfoot{
         padding-right: 90px;
         gap:10px;
     }
+   
     .titlone{
         padding-left:90px;
         padding-right:90px;  
@@ -1284,6 +1329,9 @@ font-size:25px;
         padding-left: 90px;
         padding-right: 90px;
     }
+    .dropdown-content li a{
+        color: #000;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1291,7 +1339,10 @@ font-size:25px;
 }
 
 @media only screen and (min-width:1300px){
-    
+    .cards-wrapper{
+        flex-direction:row;
+        flex-wrap:nowrap;
+    }
 }
 @media only screen and (min-width:1400px){
     
